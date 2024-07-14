@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: user
+  Date: 14/07/24
+  Time: 19.02
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Greetings JSF</title>
+</h:head>
+
+<h:body>
+<h:form>
+    Name : <h:inputText value="#{helloBean.name}" /> <br/>
+    <h:commandButton actionListener="#{helloBean.doGreeting()}" value="Greetings" /> <br/>
+    <h:outputText value="#{helloBean.greeting}" />
+</h:form>
+</h:body>
+
+</html>
